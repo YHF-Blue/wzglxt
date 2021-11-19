@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UploadIndex</title>
+    <link href="~/Content/layuis/layui.css" rel="stylesheet" />
+    <script src="~/Content/myjs/jquery-1.10.2.js"></script>
+    <script src="~/Content/layui/layui.js"></script>
+</head>
+<body>
+    <div class="layui-upload" align="center">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;" align="center">
+            <legend>请选择您要上传的Excel文件</legend>
+        </fieldset>
+        <div class="layui-col-md6">
+            <div class="layui-panel">
+                <div style="padding: 50px 30px;">请严格遵守导入规范，必填项目务必填写</div>
+            </div>
+        </div>
+        <div style="margin-top: 30px" align="center">
+            <button id="importData" class="layui-btn layui-btn-normal">导入</button>
+        </div>
+    </div>
+    <script th:inline="javascript">
+        layui.use(["element", "layer", "upload"], function () {
+            var layer = layui.layer;
+            layui.upload.render({
+                elem: "#importData",
+                url: '/Goods_Equipment/ExcelUpload',
+                size: '800',
+                accept: "file",
+                exts: 'xls|xlsx',
+                method: 'post',
+                multiple: false,
+                done: function (result) {
+                    if (result === 0) {
+                        layer.msg('导入成功');
+                    } else if (result === 1) {
+                        layer.msg('导入失败');
+                    } else if (result === 2) {
+                        layer.msg('请规范使用');
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

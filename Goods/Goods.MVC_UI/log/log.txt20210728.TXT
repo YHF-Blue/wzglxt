@@ -1,0 +1,151 @@
+2021-07-28 08:19:13,475 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 08:19:13,494 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 08:19:13,500 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 08:19:44,779 [18] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (108ms) [Parameters=[@__UserID_0='?' (Size = 16), @__PwdMd5_1='?' (Size = 32) (DbType = AnsiStringFixedLength)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AddTime], [u].[DelFlag], [u].[DelTime], [u].[DepartmentId], [u].[Email], [u].[PassWord], [u].[PhoneNum], [u].[Sex], [u].[Url], [u].[UserId], [u].[UserName]
+FROM [UserInfo] AS [u]
+WHERE ([u].[UserId] = @__UserID_0) AND ([u].[PassWord] = @__PwdMd5_1)
+2021-07-28 08:19:44,779 [6] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (108ms) [Parameters=[@__UserID_0='?' (Size = 16), @__PwdMd5_1='?' (Size = 32) (DbType = AnsiStringFixedLength)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AddTime], [u].[DelFlag], [u].[DelTime], [u].[DepartmentId], [u].[Email], [u].[PassWord], [u].[PhoneNum], [u].[Sex], [u].[Url], [u].[UserId], [u].[UserName]
+FROM [UserInfo] AS [u]
+WHERE ([u].[UserId] = @__UserID_0) AND ([u].[PassWord] = @__PwdMd5_1)
+2021-07-28 08:19:44,873 [6] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'DataEntity.Entities.LDG_HopuGoodsContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): 列名 'Url' 无效。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2dbf8448-ffe7-416a-b82f-e1cef09530f2
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): 列名 'Url' 无效。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2dbf8448-ffe7-416a-b82f-e1cef09530f2
+Error Number:207,State:1,Class:16
+2021-07-28 08:19:44,873 [18] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'DataEntity.Entities.LDG_HopuGoodsContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): 列名 'Url' 无效。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2b17af19-7600-47c5-97a1-e91fd1a04ac6
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): 列名 'Url' 无效。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2b17af19-7600-47c5-97a1-e91fd1a04ac6
+Error Number:207,State:1,Class:16
+2021-07-28 08:21:15,593 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 08:21:15,611 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 08:21:15,617 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 08:25:38,270 [78] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:25:38,289 [78] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:25:40,968 [76] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:25:40,984 [76] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:45:50,186 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 08:45:50,206 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 08:45:50,212 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 08:46:11,685 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:46:11,702 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:46:15,568 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:46:15,581 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:46:32,362 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:46:32,376 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 08:50:02,590 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 08:50:02,609 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 08:50:02,617 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:06:47,080 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:06:47,098 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:06:47,105 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:34:34,254 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:34:34,271 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:34:34,278 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:39:06,546 [27] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - WorkFlow is Error:Object reference not set to an instance of an object.
+2021-07-28 09:43:59,389 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:43:59,407 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:43:59,419 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:47:11,894 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:47:11,913 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:47:11,922 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:48:39,796 [4] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - WorkFlow is Error:Object reference not set to an instance of an object.
+2021-07-28 09:49:00,091 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:49:00,109 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:49:00,114 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 09:50:36,921 [4] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - WorkFlow is Error:Object reference not set to an instance of an object.
+2021-07-28 09:55:08,710 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 09:55:08,729 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 09:55:08,735 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 10:00:05,787 [35] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - WorkFlow is Error:Object reference not set to an instance of an object.
+2021-07-28 10:08:38,948 [85] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 10:08:38,959 [85] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 10:12:32,141 [57] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 10:12:32,151 [57] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-28 10:15:03,498 [72] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - WorkFlow is Error:Object reference not set to an instance of an object.
+2021-07-28 10:58:29,842 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 10:58:29,860 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 10:58:29,866 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 17:37:49,642 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 17:37:49,660 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 17:37:49,667 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 17:50:18,429 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 17:50:18,445 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 17:50:18,452 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-28 18:17:29,504 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-28 18:17:29,522 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-28 18:17:29,529 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI

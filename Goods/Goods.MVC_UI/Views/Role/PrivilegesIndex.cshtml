@@ -1,0 +1,117 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PowerIndex</title>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.0.0.js"></script>
+    <script src="~/Content/layui/layui.js"></script>
+</head>
+<body>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend> @ViewBag.RoleId 权限分配</legend>
+    </fieldset>
+    <div class="layui-btn-container">
+        <button type="button" class="layui-btn layui-btn-sm" lay-demo="getChecked">提交修改</button>
+        <button type="button" class="layui-btn layui-btn-sm" lay-demo="reload">重载实例</button>
+    </div>
+    <div id="test12" class="demo-tree-more"></div>
+    <script src="~/js/site.js" charset="utf-8"></script>
+
+    <!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+    <script>
+        var roleId = '@ViewBag.RoleId';
+        console.log(roleId);
+        layui.use(['tree', 'util'], function () {
+            var tree = layui.tree
+                , layer = layui.layer
+                , util = layui.util
+            $.ajax({
+                url: "/Role/GetPower?roleId=" + roleId,//配置请求地址
+                type: "post",//配置请求方式
+                success: function (res) {
+                    console.log(res);
+                    tree.render({
+                        elem: '#test12'
+                        , data: res
+                        , showCheckbox: true  //是否显示复选框
+                        , id: 'id'
+                    });
+                }
+            });
+            util.event('lay-demo', {
+                getChecked: function (othis) {
+                    var checkedData = tree.getChecked('id'); //获取选中节点的数据
+                    console.log(checkedData);
+                    if (checkedData.length > 0) {
+                        var nodeIds = new Array();
+                        nodeIds = getCheckedId(checkedData);
+                        var ActorTreeid = nodeIds;
+                        $.ajax({
+                            url: "/Role/SetPower",//配置请求地址
+                            type: "post",//配置请求方式
+                            data: {
+                                permissions: ActorTreeid,
+                                roleId: roleId
+                            },
+                            success: function (res) {
+                                if (res == "ok") {
+                                    layer.alert("分配成功");
+                                    btn_search();
+                                }
+                                else {
+                                    layer.alert("分配失败");
+                                }
+                            }
+                        });
+                    }
+                    else {
+                        layer.alert("至少选择一条权限");
+                    }
+                }
+                , reload: function () {
+                    //重载实例
+                    tree.reload('id', {
+                    });
+                }
+            });
+            btn_search = function () {
+                $.ajax({
+                    url: "/Role/GetPower?roleId=" + roleId,//配置请求地址
+                    type: "post",//配置请求方式
+                    success: function (res) {
+                        console.log(res);
+                        tree.render({
+                            elem: '#test12'
+                            , data: res
+                            , showCheckbox: true  //是否显示复选框
+                            , id: 'id'
+                        });
+                    }
+                });
+            };
+        });
+        function getCheckedId(data) {
+            var id = "";
+            $.each(data, function (index, item) {
+                if (id != "") {
+                    id = id + "$" + item.id;
+                }
+                else {
+                    id = item.id;
+                }
+                //item 没有children属性
+                if (item.children != null) {
+                    var i = getCheckedId(item.children);
+                    if (i != "") {
+                        id = id + "$" + i;
+                    }
+                }
+            });
+            return id;
+        }
+    </script>
+</body>
+</html>

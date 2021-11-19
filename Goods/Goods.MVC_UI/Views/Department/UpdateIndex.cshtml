@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/layui/layui.js"></script>
+    <script src="~/Content/myjs/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="layui-col-md8">
+        <form class="layui-form layui-form-pane" lay-filter="form_add" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">部门ID</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="DepartmentId" lay-verify="required" placeholder="请输入部门ID" readonly="" style="color:crimson" class="layui-input" value="@ViewBag.department.DepartmentId">
+                </div>
+                <label class="layui-form-label">部门名称</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="DepartmentName" lay-verify="required|maxlength" placeholder="请输入部门名称" class="layui-input" value="@ViewBag.department.DepartmentName">
+                </div>
+            </div>
+
+            <label class="layui-form-label">主管</label>
+            <div class="layui-input-inline ">
+                <select name="LeaderId">
+                    @foreach (var item in @ViewBag.Director)
+                    {
+                        <option value=@item.LeaderId @(item.LeaderId==@ViewBag.department.LeaderId ? "selected": null)>@item.UserName</option>
+                    }
+                </select>
+            </div>
+
+            <br />
+            <br />
+            <label class="layui-form-label">父部门</label>
+            <div class="layui-input-inline ">
+                <select name="ParentId">
+                    @foreach (var item in @ViewBag.Boos)
+                    {
+                        <option value=@item.ParentId @(item.ParentId==@ViewBag.department.ParentId ? "selected": null)>@item.DepartmentName</option>
+                    }
+                </select>
+            </div>
+
+
+
+
+            <div class="layui-form-item" style="text-align:center">
+                <button class="layui-btn" lay-submit="" lay-filter="formDemo">确认修改</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        layui.use(['form'], function () {
+            var form = layui.form
+
+            //自定义验证规则
+            form.verify({
+                maxlength: function (value) {
+                    //value 参数就是文本框中的值
+                    if (value.length > 16) {
+                        return '不能超过16个字符';//验证不通过
+                    }
+                }
+                //判断角色ID是否存在
+               @* , isrepeat: function (value) {
+                   // debugger;
+                    var callbackdata;
+                    $.ajax({
+                        url: "/Department/ChenkRepeat",
+                        type: "post",
+                        async: false,//同步--很关键
+                        data: {
+                            value: value
+                        },
+                        success: function (data) {
+                            callbackdata = data;
+                        }
+                    });
+                    if (callbackdata == "no") {
+                        return ("同一部门的信息已存在，请添加其他部门信息！");
+                    }
+                }*@
+            });
+
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+               // debugger;
+                $.ajax({
+                    url: '/Department/Update',
+                    method: 'post',
+                    data: data.field,
+                    async: false,//同步,粗暴的防止手贱点多次-->办法2，禁用提交按钮（由你喜欢）
+                    success: function (data) {
+                        //debugger;
+                        if (data == "ok") {
+                            layer.alert("修改成功！");
+
+                            setTimeout(function () {
+                                //休眠2秒后页面跳转
+                                //window.location.href = "/Department/";
+                                //关闭当前弹框
+                                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+
+                                window.parent.btn_search();//调用父页面的方法
+                                parent.layer.close(index);//再执行关闭 
+
+                            }, 2000);
+
+
+                        } else {
+                            layer.alert("修改失败");
+                        }
+                    }
+                });
+                return false;//防止页面跳转--很关键
+            });
+        });
+    </script>
+
+</body>
+</html>

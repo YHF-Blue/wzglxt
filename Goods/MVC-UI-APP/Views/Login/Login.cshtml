@@ -1,0 +1,50 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <script src="~/myjs/jquery-1.10.2.js"></script>
+    <script>
+        function btn() {
+            debugger;
+            $.ajax({
+                url: 'http://localhost:8187/api/Token/GetToken',
+                type: 'get',
+                data: {
+                    userId: "u1003",//应该来自文本框
+                    pwd: '123',
+                },
+                success: function (res) {
+                    debugger;
+                    //把json字符串转成json对象
+                    var json = $.parseJSON(res);
+                    if (res.result = true) {
+                        //登录成功,跳转到主页，并把token传过去
+                        window.location.href = "/Home/HomeIndex?token=" + json.token;
+                    } else {
+                        //登录失败，重新登录
+                    }
+
+                }
+
+
+            });
+        }
+
+    </script>
+</head>
+<body>
+    账号:<input type="text" />
+    密码:<input type="text" />
+    <button onclick="btn()">登录</button>
+
+
+</body>
+
+</html>
+
+

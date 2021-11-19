@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>企业物资系统</title>
+
+    <script src="~/Content/layui/layui.js"></script>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/Content/css/admin.css" rel="stylesheet" />
+    <script src="~/Content/myjs/MyHome.js"></script>
+
+</head>
+<body>
+
+    <!--主布局容器-->
+    <div id="cntr_Container">
+        <div class="layui-layout-admin">
+
+            <!--头部-->
+            <div class="layui-header">
+
+                <!--菜单伸缩/页面刷新-->
+                <div class="layui-layout-left">
+                    <ul class="layui-nav">
+                        <li class="layui-nav-item" lay-unselect>
+                            <a href="javascript:;" click-event="flexible">
+                                <i class="layui-icon layui-icon-shrink-right" id="icon_Flexible"></i>
+                            </a>
+                        </li>
+                        <li class="layui-nav-item" lay-unselect>
+                            <a href="javascript:;" click-event="refresh">
+                                <i class="layui-icon layui-icon-refresh-3"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--全屏展示/用户登录信息-->
+                <div class="layui-layout-right">
+                    <ul class="layui-nav">
+                        <li class="layui-nav-item">
+                            <a href="javascript:;">
+                                @*<a href="javascript:;" click-event="fullScreen">*@
+                                <i class="layui-icon layui-icon-screen-full"></i>
+                            </a>
+                        </li>
+
+                        <li class="layui-nav-item">
+                            <a href="javascript:;">
+                                @{
+                                    if (@ViewBag.list == null)
+                                    {
+
+                                        <img src="~/assets/img/user2.png" class="layui-nav-img" />
+                                    }
+                                    else
+                                    {
+                                        <img src="@ViewBag.list.Url" class="layui-nav-img" />
+                                    }
+                                }
+                                @ViewBag.Name
+                            </a>
+                            <dl class="layui-nav-child">
+                                <dd>
+                                    <a lay-href="/User/InformationView">基本资料</a>
+                                </dd>
+                                <dd>
+                                    <a lay-href="/Login/UpdadePwd">修改密码</a>
+                                </dd>
+
+                                <dd>
+                                    <a href="/Login/LoginView">注销</a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--左侧菜单导航  -->
+            <div class="layui-side layui-side-menu">
+                <div class="layui-side-scroll">
+                    <div class="layui-logo">
+                        <img src="~/assets/img/2.jpg" />
+                        <p style="font-weight:bold">企业物资系统</p>
+                    </div>
+
+
+                    <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+
+
+                        @foreach (var item in ViewBag.Menu)//这一层遍历，是为了生成一级目录
+                        {
+                            if (item.ParentId == "0")//找到一级目录  
+                            {
+                                <li class="layui-nav-item  layui-nav-itemed">
+                                    <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-face-smile"></i>
+                                        <cite>@item.Name</cite>
+                                    </a>
+                                    <dl class="layui-nav-child">
+
+                                        @foreach (var item1 in ViewBag.Menu)
+                                        {
+                                            if (item.PowerId == item1.ParentId)//找到对应一级目录的“儿子”（二级目录）
+                                            {
+                                                <dd>
+                                                    <a lay-href=@item1.ActionUrl>@item1.Name</a>
+                                                </dd>
+                                            }
+                                        }
+                                    </dl>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <!--页面标签区-->
+            <div class="layadmin-pagetabs">
+
+                <!--右侧下拉菜单（关闭当前/关闭其他/关闭全部）-->
+                <div class="layadmin-tabs-control layui-icon layui-icon-down">
+                    <ul class="layui-nav layadmin-tabs-select">
+                        <li class="layui-nav-item" lay-unselect>
+                            <a href="javascript:;">
+                                <dl class="layui-nav-child layui-anim-fadein">
+                                    <dd>
+                                        <a href="javascript:;" click-event="closeThis">关闭当前标签页</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" click-event="closeOther">关闭其他标签页</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" click-event="closeAll">关闭所有标签页</a>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--页面标签选项卡-->
+                <div class="layui-tab" lay-allowClose="true" lay-filter="layout-tab">
+                    <ul class="layui-tab-title" id="tab_Titles">
+                        <li class="layui-this">
+                            <i class="layui-icon layui-icon-home"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--主内容区-->
+            <div class="layui-body" id="tab_Bodys">
+                <div class="layadmin-tabsbody-item layui-show">
+                    <iframe src="@Url.Action("HomeIndex")" frameborder="0" class="layadmin-iframe"></iframe>
+                </div>
+            </div>
+
+            <!--注脚区-->
+            @*<div class="layui-footer">
+            技术支持：LDG
+        </div>*@
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+
+    </script>
+</body>
+</html>

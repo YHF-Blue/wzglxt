@@ -1,0 +1,24 @@
+2021-08-02 18:22:48,095 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 18:22:48,130 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 18:22:48,137 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 18:23:40,303 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 18:23:40,333 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 18:23:40,341 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 18:24:20,028 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 18:24:20,052 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 18:24:20,058 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 18:25:04,481 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 18:25:04,505 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 18:25:04,512 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 22:06:09,732 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 22:06:09,804 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 22:06:09,815 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 22:07:15,719 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 22:07:15,741 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 22:07:15,752 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 22:18:41,485 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 22:18:41,548 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 22:18:41,561 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-08-02 22:31:11,995 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-08-02 22:31:12,053 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-08-02 22:31:12,063 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\实训中心\物资管理系统\Goods\Goods.MVC_UI

@@ -1,0 +1,78 @@
+2021-07-31 23:09:09,029 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:09:09,096 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:09:09,106 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:09:39,552 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:09:39,559 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:09:39,562 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:10:16,137 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:10:16,222 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:10:16,224 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:10:57,587 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-07-31 23:10:57,597 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:10:57,599 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:10:57,601 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:11:45,009 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-07-31 23:11:45,019 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:11:45,021 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:11:45,023 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:12:05,433 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2021-07-31 23:12:29,243 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:12:29,251 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:12:29,253 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:14:00,825 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:14:00,838 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:14:00,842 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:14:38,881 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:14:38,889 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:14:38,890 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:14:51,628 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:14:51,633 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:14:51,634 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:15:04,626 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:15:04,632 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:15:04,632 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:15:17,763 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:15:17,771 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:15:17,773 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:17:28,570 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:17:28,612 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:17:28,623 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:19:40,347 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:19:40,355 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:19:40,356 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:20:25,224 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:20:25,231 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:20:25,233 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:21:28,002 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:21:28,010 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:21:28,011 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:23:20,014 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:23:20,023 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:23:20,025 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:30:23,730 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:30:23,781 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:30:23,783 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:32:13,618 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:32:13,625 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:32:13,627 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:33:12,081 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:33:12,091 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:33:12,093 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:36:19,315 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:36:19,323 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:36:19,325 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:36:53,592 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:36:53,600 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:36:53,602 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:37:42,821 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:37:42,831 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:37:42,833 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:41:10,595 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:41:10,613 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:41:10,622 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:43:37,845 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:43:37,854 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:43:37,856 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-31 23:44:18,620 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-31 23:44:18,628 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-31 23:44:18,630 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI

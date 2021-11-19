@@ -1,0 +1,41 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/myjs/jquery-1.10.2.js"></script>
+
+    <script>
+
+        //页面一渲染立马执行ajax请求webapi
+        //想：有没有类似过滤器之类的东西，有--jq ajax的拦截器，
+        //
+
+        var apiurl = "http://localhost:8188";
+        debugger;
+        $.ajax({
+            url: apiurl +'/api/User/GetUser',//webapi的真实地址
+            //url:'/User/AA',
+            type: 'get',
+            headers: {
+                "Authorization": "Bearer "+"@ViewBag.token",  //配置请求头，把token搞进去
+            },
+            data: {},
+            success: function (res) {
+                //直接弹框
+                alert(res);
+            }
+
+        });
+
+    </script>
+
+</head>
+<body>
+   
+</body>
+</html>

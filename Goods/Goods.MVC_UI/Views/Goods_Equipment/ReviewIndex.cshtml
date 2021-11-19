@@ -1,0 +1,158 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/myjs/jquery-1.10.2.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body class="layui-fluid">
+    <div class="layui-card">
+
+        <div>
+
+            <fieldset class="layui-elem-field site-demo-button">
+                <legend>我的审核</legend>
+
+            </fieldset>
+            @*<div class="layui-row layui-form">
+                    <div class="layui-col-md2 layui-col-md-offset5 " style="margin-top:20px;"><input type="text" id="txt_Select" placeholder="请输入申请人" autocomplete="off" class="layui-input"></div>
+                    <div class="layui-col-md1" style="margin-top:20px;"> <button class="layui-btn layui-btn-normal" onclick="btn_search()">搜索</button></div>
+                </div>*@
+            <div class="layui-row">
+                <table id="mytable" lay-filter="test"></table>
+            </div>
+            <script type="text/html" id="toolbarDemo">
+                <div class="layui-row">
+                    <button class="layui-btn layui-btn-sm " lay-event="review"><i class="layui-icon"></i>开始审核</button>
+
+                </div>
+            </script>
+
+            <script type="text/html" id="stateTpl">
+                {{#  if(d.status == 0){ }}
+                <span style="color: #F581B1;">审核中</span>
+                {{#  }  }}
+            </script>
+
+        </div>
+
+    </div>
+
+
+    <script src="~/Content/layui/layui.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+    <script type="text/javascript">
+
+
+        var table;
+        //var active;
+        //var url = "";
+        //var action;
+
+        layui.use('table', function () {
+            table = layui.table;
+            //var form = layui.form;
+            //第一个实例
+            table.render({
+                elem: '#mytable'
+                , skin: 'line' //行边框风格
+                , url: '/WorkFlow/GetEquipmentApplyByReviewer' //数据接口
+                , toolbar: '#toolbarDemo'
+                , cellMinWidth: 90    //  自适应宽度，最短宽度80
+                , page: true //开启分页
+                , limits: [5, 10, 15, 20, 25, 30]
+                , limit: 5 //每页默认显示的数量
+                , defaultToolbar: ['filter', 'print', 'exports']//自由配置头部工具栏右侧的图标,导出乱码bug
+                , cols: [[ //表头
+                    { type: 'checkbox', fixed: 'left' }
+                    //, { field: 'Id', title: 'Id', sort: false, fixed: 'left', width: 70 }
+                    , { field: 'modelName', title: '实例类型', sort: false }
+                    , { field: 'userName', title: '申请人', align: 'center', sort: false }
+                    , { field: 'outGoodsName', title: '领用物品', sort: false }
+                    , { field: 'outNum', title: '领用数量', sort: false }
+                    , { field: 'reason', title: '领用理由', sort: false }
+                    , { field: 'reviewerName', title: '审核人', sort: false }
+                    , { field: 'status', title: '审核状态', sort: false, templet: '#stateTpl' }
+                    , { field: 'addTime', title: '申请时间', sort: false }
+
+                ]],
+
+            });
+
+
+            //工具栏事件 注意：上方工具栏是toolbar
+            table.on('toolbar(test)', function (obj) {
+                //debugger;
+                var checkStatus = table.checkStatus(obj.config.id);
+                switch (obj.event) {
+                    case 'review':
+                        //获取选中的个数
+                        if (checkStatus.data.length == 1) {
+                            //获取选中的信息
+                            var id = checkStatus.data[0].id;
+
+                            layer.open({
+                                type: 2,//2就代表是 iframe
+                                title: '非耗材申请',
+                                shade: 0.6,
+                                maxmin: true, //开启最大化最小化按钮
+                                area: ['893px', '600px'],
+                                content: '/Goods_Equipment/ReviewingIndex?id=' + id, //指向的页面地址,并把对应的id传过去
+                                cancel: function (index) {
+                                    layer.close(index);
+                                    //刷新table
+                                    btn_search();
+                                }
+                            });
+
+
+                        } else {
+                            layer.alert("必须选中且只能选中一条信息！");
+                        }
+                        break;
+
+                };
+            });
+
+
+
+
+            //查询
+            btn_search = function () {
+                //debugger;//打断点
+                //获取文本框的值
+                //var selectInfo = $("#txt_Select").val();
+                //重新加载表格
+                table.reload('mytable', {
+                    url: '/WorkFlow/GetEquipmentApplyByReviewer',
+                    page: {
+                        curr: 1//从第一页开始
+                    },
+                });
+
+
+            };
+
+
+
+        });
+
+
+
+
+        
+
+    </script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WorkFlowStepIndex</title>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/layui/layui.js"></script>
+</head>
+<body>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>签核时间线：总流程进度（包含签核流程和借出及归还）</legend>
+    </fieldset>
+
+    <div style=" margin-left:20%">
+
+        <ul class="layui-timeline">
+            @foreach (var item in @ViewBag.list)
+            {
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <p><div class="layui-timeline-title">签核人：@item.ReviewerName</div></p>
+                        @if (@item.ReviewStatus == 0)
+                        {
+                            <p><div class="layui-timeline-title" style="color :#d418e2">签核状态：未签核</div></p>
+                            <p><div class="layui-timeline-title" style="color :#d418e2">签核意见：@item.ReviewReason</div></p>
+                            <p><div class="layui-timeline-title" style="color :#d418e2">签核时间：@item.ReviewTime</div></p>
+                            <p><div class="layui-timeline-title" style="color :#d418e2">本步骤属于签核流程，@(item.NextReviewerName==null?"已是最后一个审核主管":"下一个审核人："+item.NextReviewerName)</div></p>
+                        }
+                        @if (@item.ReviewStatus == 1)
+                        {
+                            <p><div class="layui-timeline-title">签核状态：已签核</div></p>
+                            <p><div class="layui-timeline-title">签核意见：@item.ReviewReason</div></p>
+                            <p><div class="layui-timeline-title">签核时间：@item.ReviewTime</div></p>
+                            if (item.ReviewReason == "已借出" || item.ReviewReason == "已归还")
+                            {
+                                <p><div class="layui-timeline-title" style="color :#d418e2">本步骤不属于签核流程，只是为了记录出库/归还的信息</div></p>
+                            }
+                            else
+                            {
+                                <p><div class="layui-timeline-title" style="color :#d418e2">本步骤属于签核流程，@(item.NextReviewerName==null?"已是最后一个审核主管":"下一个审核人："+item.NextReviewerName)</div></p>
+                            }
+                        }
+                        @if (@item.ReviewStatus == 2)
+                        {
+                            <p><div class="layui-timeline-title" style="color :red">签核状态：已驳回</div></p>
+                            <p><div class="layui-timeline-title" style="color :red">驳回意见：@item.ReviewReason</div></p>
+                            <p><div class="layui-timeline-title" style="color :red">驳回时间：@item.ReviewTime</div></p>
+                            <p><div class="layui-timeline-title" style="color :red">下一个审核人：无</div></p>
+                        }
+
+                    </div>
+                </li>
+            }
+        </ul>
+
+    </div>
+</body>
+</html>

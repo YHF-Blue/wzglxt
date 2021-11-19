@@ -1,0 +1,203 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/myjs/jquery-1.10.2.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body class="layui-fluid">
+    <div class="layui-card">
+
+        <div>
+
+            <fieldset class="layui-elem-field site-demo-button">
+                <legend>我的审核</legend>
+
+            </fieldset>
+            <div class="layui-row layui-form">
+                <div class="layui-col-md2 layui-col-md-offset5 " style="margin-top:20px;"><input type="text" id="txt_Select" placeholder="请输入申请人编号" autocomplete="off" class="layui-input"></div>
+                <div class="layui-col-md1" style="margin-top:20px;"> <button class="layui-btn layui-btn-normal" onclick="btn_search()">搜索</button></div>
+            </div>
+            <div class="layui-row">
+                <table id="mytable" lay-filter="test"></table>
+            </div>
+            <script type="text/html" id="toolbarDemo">
+                <div class="layui-row">
+                    <button class="layui-btn layui-btn-sm " lay-event="output"><i class="layui-icon"></i>批量借出</button>
+
+                </div>
+            </script>
+
+            <script type="text/html" id="stateTpl">
+                {{#  if(d.status == 1){ }}
+                <span style="color: #F581B1;">审核通过</span>
+                {{#  }  }}
+            </script>
+
+        </div>
+
+    </div>
+
+
+    <script src="~/Content/layui/layui.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+
+    <script type="text/javascript">
+
+
+        var table;
+        //var active;
+        //var url = "";
+        //var action;
+
+        layui.use('table', function () {
+            table = layui.table;
+            //var form = layui.form;
+            //第一个实例
+            table.render({
+                elem: '#mytable'
+                , skin: 'line' //行边框风格
+                , url: '/WorkFlow/GetConsumableOutput' //数据接口
+                , toolbar: '#toolbarDemo'
+                , cellMinWidth: 90    //  自适应宽度，最短宽度80
+                , page: true //开启分页
+                , limits: [5, 10, 15, 20, 25, 30]
+                , limit: 5 //每页默认显示的数量
+                , defaultToolbar: ['filter', 'print', 'exports']//自由配置头部工具栏右侧的图标,导出乱码bug
+                , cols: [[ //表头
+                    { type: 'checkbox', fixed: 'left' }
+                    //, { field: 'Id', title: 'Id', sort: false, fixed: 'left', width: 70 }
+                    , { field: 'modelName', title: '实例类型', sort: false }
+                    , { field: 'userName', title: '申请人', align: 'center', sort: false }
+                    , { field: 'outGoodsName', title: '领用物品', sort: false }
+                    , { field: 'outNum', title: '领用数量', sort: false }
+                    , { field: 'reason', title: '领用理由', sort: false }
+                    , { field: 'reviewerName', title: '审核人', sort: false }
+                    , { field: 'status', title: '审核状态', sort: false, templet: '#stateTpl' }
+                    , { field: 'addTime', title: '申请时间', sort: false }
+
+                ]],
+
+            });
+
+
+            //工具栏事件 注意：上方工具栏是toolbar
+            table.on('toolbar(test)', function (obj) {
+               // debugger;
+                var checkStatus = table.checkStatus(obj.config.id);
+                switch (obj.event) {
+                    case 'output':
+
+                        //获取选中的信息
+                        var data = checkStatus.data;
+
+                        if (data.length > 0) {
+                            layer.confirm('确定要借出吗?', function (index) {
+                                //构造字符串
+                                var arrStr = "";
+                                for (var i = 0; i < data.length; i++) {
+                                    arrStr += data[i].instanceId + ","
+                                }
+                                //调用更新的方法
+                                btn_output(arrStr);
+
+                                layer.close(index);
+                            });
+                        } else {
+                            layer.alert("请选择要借出的物品");
+                        }
+
+
+                        break;
+
+                };
+            });
+
+
+        });
+
+        layui.use('layer', function () {
+            //触发事件
+            var id = "100";
+            active = {
+                notice: function () {
+                    //示范一个公告层
+                    layer.open({
+                        type: 1
+                        , title: [action, 'font-size:18px;']
+                        , closeBtn: 1
+                        , area: ['780px', '420px']
+                        , shade: 0.8
+                        , id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                        , btnAlign: 'c'
+                        , moveType: 1 //拖拽模式，0或者1
+                        , content: '<iframe data-frameid="' + id + '" scrolling="auto" frameborder="0" src="' + url + '" style="width:100%;height:99%;"></iframe>'
+
+                        , success: function (layero) {
+                        }
+                        , yes: function (index, layero) {
+                            if (confirm('确定要' + action + '吗？')) { //只有当点击confirm框的确定时，该层才会关闭
+                                layer.close(index)
+                            }
+                        }
+                        , cancel: function (index, layero) {
+                            layer.close(index);
+                            //刷新table
+                            btn_search();
+                        }
+                    });
+                }
+
+            };
+        });
+
+        //耗材批量出库--关于库存，可以在后台做，也可以不做（因为现场如果点数量能出库，说明库存肯定够的）
+        btn_output = function (arrStr) {
+            //alert(arrStr)
+            //OutpuEquipment
+            $.ajax({
+                type: "post",
+                url: "/WorkFlow/OutputConsumable",
+                data: {
+                    arrStr: arrStr,
+                },
+                success: function (data) {
+                    if (data == "ok") {
+                        btn_search();
+                        layer.alert("出库成功");
+                    }
+                }
+
+            })
+        }
+
+        //查询
+        btn_search = function () {
+            var selectInfo = $("#txt_Select").val();
+            table.reload('mytable', {
+                url: '/WorkFlow/GetConsumableOutput',
+                page: {
+                    curr: 1//从第一页开始
+                },
+                where: {
+                    selectInfo: selectInfo,
+                } //设定异步数据接口的额外参数
+            });
+        };
+
+
+
+    </script>
+
+
+
+</body>
+</html>
+

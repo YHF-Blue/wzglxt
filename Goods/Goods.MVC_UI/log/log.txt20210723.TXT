@@ -1,0 +1,150 @@
+2021-07-23 00:06:47,897 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 00:06:47,924 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 00:06:47,937 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: F:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 00:08:00,557 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 00:08:00,584 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 00:08:00,598 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: F:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 00:08:27,776 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 00:08:27,796 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 00:08:31,190 [10] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 00:08:31,211 [10] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 08:25:57,857 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 08:25:57,873 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 08:25:57,879 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 08:30:38,403 [37] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 08:30:38,414 [37] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 08:30:40,622 [46] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 08:30:40,629 [46] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 08:52:17,185 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 08:52:17,200 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 08:52:17,210 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 08:56:45,619 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 08:56:45,635 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 08:56:45,642 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:03:17,253 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:03:17,267 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:03:17,275 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:03:25,336 [9] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'Goods.MVC_UI.Filters.MyRolePowerAttribute'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-23 09:05:17,300 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:05:17,316 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:05:17,324 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:06:44,160 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:06:44,177 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:06:44,184 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:07:46,784 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:07:46,799 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:07:46,805 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:10:17,640 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:10:17,655 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:10:17,662 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:12:59,705 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:12:59,719 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:12:59,726 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:13:53,583 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:13:53,602 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:13:53,608 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:16:17,397 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:16:17,412 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:16:17,418 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:17:36,642 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:17:36,657 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:17:36,663 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:18:03,224 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:18:03,240 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:18:03,246 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:19:32,205 [28] ERROR Goods.MVC_UI.Filters.MyRolePowerAttribute - 用户ID：U1002用户名：小郭郭试图非法访问控制器：Home，时间为2021-07-23:09-19-32
+2021-07-23 09:19:32,224 [4] ERROR Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - The view 'NoPower' was not found. Searched locations: /Views/Login/NoPower.cshtml, /Views/Shared/NoPower.cshtml
+2021-07-23 09:19:32,278 [4] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'NoPower' was not found. The following locations were searched:
+/Views/Login/NoPower.cshtml
+/Views/Shared/NoPower.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-23 09:20:55,068 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:20:55,085 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:20:55,098 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 09:24:06,537 [39] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 09:24:06,547 [39] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 09:57:00,630 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 09:57:00,665 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 09:57:00,679 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:00:30,674 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:00:30,689 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:00:30,695 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:00:44,332 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:00:44,349 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:00:44,356 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:01:54,441 [10] ERROR Goods.MVC_UI.Filters.MyExceptionAttribute - Department is Error:Object reference not set to an instance of an object.
+2021-07-23 10:03:13,451 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:03:13,466 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:03:13,473 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:07:52,943 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:07:52,961 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:07:52,967 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:11:57,292 [24] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 10:11:57,311 [24] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 10:26:39,251 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:26:39,266 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:26:39,273 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:28:48,602 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:28:48,616 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:28:48,623 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:30:44,016 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:30:44,035 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:30:44,042 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:33:59,785 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:33:59,800 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:33:59,808 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:38:10,993 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:38:11,012 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:38:11,019 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:41:50,570 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:41:50,588 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:41:50,596 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:46:18,432 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 10:46:18,450 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 10:46:18,459 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\实训中心\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 10:47:25,959 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 10:47:25,978 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 10:58:34,768 [29] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 10:58:34,781 [29] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 23:25:48,246 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-07-23 23:25:48,293 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-07-23 23:25:48,295 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Users\北森灵鹿\Desktop\物资管理系统\Goods\Goods.MVC_UI
+2021-07-23 23:26:17,541 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-07-23 23:26:17,545 [4] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
