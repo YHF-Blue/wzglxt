@@ -5848,11 +5848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\TokenApi\\TokenApi.csproj",
+      "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\TokenApi\\TokenApi.csproj",
       "projectName": "TokenApi",
-      "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\TokenApi\\TokenApi.csproj",
+      "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\TokenApi\\TokenApi.csproj",
       "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\TokenApi\\obj\\",
+      "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\TokenApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -5873,14 +5873,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj": {
-              "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj"
+            "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj": {
+              "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj"
             },
-            "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj": {
-              "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj"
+            "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj": {
+              "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj"
             },
-            "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj": {
-              "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj"
+            "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj": {
+              "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj"
             }
           }
         }

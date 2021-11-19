@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj": {}
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
         "projectName": "DataEntity",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -84,14 +84,14 @@
         }
       }
     },
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
         "projectName": "Goods.MVC_UI",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -112,20 +112,20 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj"
               }
             }
           }
@@ -191,14 +191,14 @@
         }
       }
     },
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj",
         "projectName": "IService",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -219,11 +219,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj"
               }
             }
           }
@@ -256,14 +256,14 @@
         }
       }
     },
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -314,14 +314,14 @@
         }
       }
     },
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\Service.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Service\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -342,17 +342,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj"
               },
-              "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
-                "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj"
+              "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
+                "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj"
               }
             }
           }
@@ -407,14 +407,14 @@
         }
       }
     },
-    "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
+    "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj",
+        "projectUniqueName": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\Utility.csproj",
+        "projectPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\Utility.csproj",
         "packagesPath": "C:\\Users\\YHF\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Utility\\obj\\",
+        "outputPath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

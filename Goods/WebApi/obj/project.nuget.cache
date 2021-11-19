@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CbIhjDyRfOilqD5n52SffAtrI3ruxe2DWbFuBb2vZOMX5hDsxIUCsXvluQhoHKqSwbSX839j5vZnjY4DLvRZMg==",
+  "dgSpecHash": "EoAm0NE6MgWG5dremOr7CFdSMrvOBrYCFk2YCUc0DOB2MWL3MPDq6TcqCH5FOBpz87xZMuXtBWhF9Erb72CBJg==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\WebApi\\WebApi.csproj",
+  "projectFilePath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YHF\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.13\\microsoft.aspnetcore.authentication.jwtbearer.3.1.13.nupkg.sha512",
     "C:\\Users\\YHF\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",

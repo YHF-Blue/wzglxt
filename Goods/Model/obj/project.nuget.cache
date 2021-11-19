@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BxSSMWyl31XXvsb8TJsnEWXhCeVGBsa7z3vFKFVhKyNeQtSfXvHBGYhklcc30dzGNZrpaNKPtFxNKjuHLT6MWA==",
+  "dgSpecHash": "XLL0VyLN57TF7f0KBvfS5QIaUOuFrEfvRNevPex5xyfFu3099HvcJdDjZoX+fxZo0BPQRpuwG75mAQD2GSB87Q==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Model\\Model.csproj",
+  "projectFilePath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Model\\Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

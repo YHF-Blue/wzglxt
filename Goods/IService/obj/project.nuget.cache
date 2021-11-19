@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+LWOFFqm0FOBpm5Zd0lxLSkCvbbijmZwUSD3uNizJzwOJb9Ztd5lTX7daRY2l+1lyMxZRV22WsrgI33jYQHJPg==",
+  "dgSpecHash": "rbyIRm0+nm0U6fM+beAnxHf4f4SD9SiQg6lCdXci5iwPRI9lVtnqpqfFra7lTnMa30KEnGh48LhZXcBO39OhPQ==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\IService\\IService.csproj",
+  "projectFilePath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\IService\\IService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YHF\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\YHF\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

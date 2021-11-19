@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wD5QwdDuqD1JezXDgBpvLVSs41fyT4s6E8tTArO3/dPY+ows4emonQn/zPzxfIO6u10JeIgc+dLw67MzhWFB4Q==",
+  "dgSpecHash": "FdCbqpJQKetrwkXabvhwHvBUjLK3yfA9tj7SUuMfE5SGzhTY7x+LvzOeP5hfx8rHx2zIp41L6PzpS8GCS2TM0g==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
+  "projectFilePath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\DataEntity\\DataEntity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YHF\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\YHF\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

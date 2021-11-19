@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mmWwpMhUU5AvxpViTzdk/TOF2mqnTYVW/YWJwmijGMQ8Iu7TH6uARgfuvCKGjQu/ToFn5W8rGEad3qWZFOMkLQ==",
+  "dgSpecHash": "l5UzHsw5rnWrARCJ83z22XPuF9yfkwDPu5IPtcZyxW1acARSXv+YPj9LyL5Fqd/655h8HhFffYEA6BhnxP3sxw==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\桌面\\实训物资管理系统\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
+  "projectFilePath": "D:\\OneDrive\\桌面\\物资管理系统\\Goods\\Goods.MVC_UI\\Goods.MVC_UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YHF\\.nuget\\packages\\captchagen.netcore\\1.1.1\\captchagen.netcore.1.1.1.nupkg.sha512",
     "C:\\Users\\YHF\\.nuget\\packages\\dotnetcore.npoi\\1.2.3\\dotnetcore.npoi.1.2.3.nupkg.sha512",
